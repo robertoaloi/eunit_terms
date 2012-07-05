@@ -21,9 +21,9 @@ Read the results:
         {ok,#Ref<0.0.0.114>}
         > dets:lookup(Ref, testsuite).
         [{testsuite,<<"module 'fact_test'">>,8,<<>>,3,0,0,0,
-            [{testcase,"fact_test:fact_zero_test/0_0",[],ok,0,<<>>},
-             {testcase,"fact_test:fact_neg_test/0_0",[],ok,0,<<>>},
-             {testcase,"fact_test:fact_pos_test/0_0",[],ok,0,<<>>}]}]
+            [{testcase,{fact_test,fact_zero_test,0,0},[],ok,0,<<>>},
+             {testcase,{fact_test,fact_neg_test,0,0},[],ok,0,<<>>},
+             {testcase,{fact_test,fact_pos_test,0,0},[],ok,0,<<>>}]}]
 
 Specify a name for the DETS table:
 

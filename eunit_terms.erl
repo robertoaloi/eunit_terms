@@ -171,8 +171,8 @@ handle_cancel(test, Data, St) ->
     St#state{testsuite=NewTestSuite}.
 
 format_name({Module, Function, Arity}, Line) ->
-    lists:flatten([atom_to_list(Module), ":", atom_to_list(Function), "/",
-		   integer_to_list(Arity), "_", integer_to_list(Line)]).
+    {Module, Function, Arity, Line}.
+
 format_desc(undefined) ->
     "";
 format_desc(Desc) when is_binary(Desc) ->
